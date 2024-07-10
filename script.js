@@ -58,18 +58,20 @@ function playGame() {
     }
 
     for (let i = 0; i < 5; i++) {
-        console.log(playRound(getComputerChoice(), getHumanChoice()));
-        console.log("Computer: " + computerScore + ", Player: " + humanScore);
+        alert(
+            `${playRound(getComputerChoice(), getHumanChoice())}
+Computer: ${computerScore}, Player: ${humanScore}`
+        );
     }
 
     if (computerScore > humanScore) {
-        console.log("Computer Won");
+        alert("Computer Won");
     }
     else if (humanScore > computerScore) {
-        console.log("You Won");
+        alert("You Won");
     }
     else {
-        console.log("Game Tied");
+        alert("Game Tied");
     }
 }
 
