@@ -1,0 +1,13 @@
+#container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#scoreBox {
+    margin-top: 10px;
+    text-align: center;
+}
+
+p {
+    margin: 8px;
+}
